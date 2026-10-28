@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alexandre Marchisio · CV</title>
+<meta name="description" content="Business developer et consultant IA à Tbilissi. Mon CV en français et en anglais, LinkedIn, WhatsApp.">
+<!-- adresse provisoire : la page ne doit pas être indexée -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://4lexsept.github.io/cv/">
+<meta property="og:title" content="Alexandre Marchisio · CV">
+<meta property="og:description" content="Business developer et consultant IA à Tbilissi. Mon CV en français et en anglais, LinkedIn, WhatsApp.">
+<meta property="og:image" content="https://4lexsept.github.io/cv/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f1e9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191b18" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="photo.jpg">
+<link rel="apple-touch-icon" href="photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght,SOFT@9..144,560,100&display=swap" rel="stylesheet">
+<script>
+  // la langue avant le premier affichage : #en ou #fr dans l'adresse, sinon celle du téléphone (français par défaut pour les francophones)
+  (function () {
+    var h = location.hash.toLowerCase(), l;
+    if (h === "#en" || h === "#fr") l = h.slice(1);
+    else l = (navigator.languages || [navigator.language || "fr"]).some(function (x) { return /^fr/i.test(x); }) ? "fr" : "en";
+    document.documentElement.dataset.lang = l;
+    document.documentElement.lang = l;
+  })();
+</script>
+<style>
+  :root {
+    --bg: #f6f1e9;
+    --blob-a: #dbe9d7;
+    --blob-b: #f5dcc6;
+    --ink: #1f2a24;
+    --muted: #5d6a62;
+    --card: #ffffff;
+    --accent: #2f6b4f;
+    --accent-ink: #ffffff;
+    --accent-soft: #e4efe7;
+    --line: rgba(31, 42, 36, .08);
+    --shadow: 0 1px 2px rgba(48, 40, 28, .06), 0 10px 28px -12px rgba(48, 40, 28, .28);
+    --shadow-hover: 0 2px 4px rgba(48, 40, 28, .07), 0 16px 34px -12px rgba(48, 40, 28, .34);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191b18;
+      --blob-a: #22302a;
+      --blob-b: #33281f;
+      --ink: #f0ece3;
+      --muted: #a8b1aa;
+      --card: #24282a;
+      --accent: #84c7a0;
+      --accent-ink: #13231a;
+      --accent-soft: #2c3a32;
+      --line: rgba(240, 236, 227, .1);
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px -12px rgba(0, 0, 0, .6);
+      --shadow-hover: 0 2px 4px rgba(0, 0, 0, .35), 0 16px 34px -12px rgba(0, 0, 0, .7);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(circle at 12% -4%, var(--blob-a) 0, transparent 42%),
+      radial-gradient(circle at 105% 96%, var(--blob-b) 0, transparent 38%);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: max(18px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
+  }
+
+  /* la bascule de langue */
+  .langues { display: flex; justify-content: flex-end; }
+  .bascule {
+    display: inline-flex; padding: 4px; gap: 2px;
+    border-radius: 999px; background: var(--card); box-shadow: var(--shadow);
+  }
+  .bascule button {
+    font: 600 13px/1 "DM Sans", system-ui, sans-serif; letter-spacing: .04em;
+    border: 0; cursor: pointer; padding: 9px 14px; border-radius: 999px;
+    color: var(--muted); background: transparent;
+  }
+  .bascule button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+
+  /* la tête */
+  header { text-align: center; margin-top: 6px; }
+  .photo {
+    width: 132px; height: 132px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;
+    border: 5px solid var(--card); box-shadow: var(--shadow);
+  }
+  .salut {
+    display: inline-block; margin-top: 16px; padding: 6px 13px; border-radius: 999px;
+    font-size: 14px; background: var(--accent-soft); color: var(--accent);
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 560;
+    font-variation-settings: "SOFT" 100;
+    font-size: clamp(30px, 8.4vw, 36px); line-height: 1.08; letter-spacing: -.01em;
+    margin: 12px 0 6px;
+  }
+  .role { font-size: 17px; font-weight: 500; margin: 0; }
+  .lieu {
+    display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;
+    font-size: 15px; color: var(--muted);
+  }
+  .lieu svg { width: 15px; height: 15px; }
+  .bio { font-size: 15.5px; line-height: 1.5; color: var(--muted); margin: 14px auto 0; max-width: 380px; }
+  .puces { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 14px; }
+  .puces > span {
+    font-size: 13.5px; padding: 6px 12px; border-radius: 999px;
+    background: var(--card); box-shadow: 0 0 0 1px var(--line);
+  }
+
+  /* les boutons */
+  nav { display: flex; flex-direction: column; gap: 14px; margin-top: 26px; }
+  .btn {
+    display: flex; align-items: center; gap: 14px;
+    min-height: 70px; padding: 11px 20px 11px 12px; border-radius: 999px;
+    background: var(--card); color: var(--ink); text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: transform .18s ease, box-shadow .18s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible, .bascule button:focus-visible, .mail:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .ico {
+    width: 46px; height: 46px; border-radius: 50%; flex: none;
+    display: grid; place-items: center;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .ico svg { width: 22px; height: 22px; }
+  .txt { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .t { font-size: 17px; font-weight: 600; line-height: 1.2; }
+  .s { font-size: 13.5px; color: var(--muted); }
+  .va { width: 18px; height: 18px; flex: none; color: var(--muted); opacity: .7; }
+  /* le CV de la langue choisie passe en premier, en couleur */
+  html[data-lang="fr"] .cv-fr, html[data-lang="en"] .cv-en { order: -1; background: var(--accent); color: var(--accent-ink); }
+  html[data-lang="fr"] .cv-fr .s, html[data-lang="en"] .cv-en .s,
+  html[data-lang="fr"] .cv-fr .va, html[data-lang="en"] .cv-en .va { color: var(--accent-ink); opacity: .82; }
+  html[data-lang="fr"] .cv-fr .ico, html[data-lang="en"] .cv-en .ico { background: rgba(255, 255, 255, .2); color: var(--accent-ink); }
+  .linkedin .ico { background: #0a66c2; color: #fff; }
+  .whatsapp .ico { background: #25d366; color: #fff; }
+
+  .mail {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin: 22px auto 0; padding: 10px 16px; border-radius: 999px; width: fit-content; max-width: 100%;
+    font-size: 15px; color: var(--muted); text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .mail svg { width: 18px; height: 18px; flex: none; }
+  .mail:hover { color: var(--ink); background: var(--card); }
+  footer { text-align: center; font-size: 12.5px; color: var(--muted); opacity: .75; margin-top: 26px; }
+
+  /* une langue à la fois */
+  html[data-lang="fr"] [data-en], html[data-lang="en"] [data-fr] { display: none; }
+
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="langues">
+    <div class="bascule" role="group" aria-label="Langue / Language">
+      <button type="button" data-choix="fr" aria-pressed="true">FR</button>
+      <button type="button" data-choix="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <header>
+    <img class="photo" src="photo.jpg" width="132" height="132" alt="Alexandre Marchisio">
+    <div class="salut">გამარჯობა 👋</div>
+    <h1>Alexandre Marchisio</h1>
+    <p class="role"><span data-fr>Business developer et consultant IA</span><span data-en>Business developer &amp; AI consultant</span></p>
+    <div class="lieu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      <span data-fr>Tbilissi, Géorgie</span><span data-en>Tbilisi, Georgia</span>
+    </div>
+    <p class="bio">
+      <span data-fr>Je cherche un poste commercial ou de business developer en Géorgie. Je construis aussi des sites web avec des automatisations IA, pour la prospection et le service client.</span>
+      <span data-en>I am looking for a sales or business development role in Georgia. I also build websites with AI automations, for prospecting and customer service.</span>
+    </p>
+    <div class="puces">
+      <span><span data-fr>Français natif</span><span data-en>Native French</span></span>
+      <span><span data-fr>Anglais courant</span><span data-en>Fluent English</span></span>
+    </div>
+  </header>
+
+  <nav>
+    <a class="btn cv-fr" href="Alexandre_Marchisio_CV_FR.pdf" target="_blank" rel="noopener" type="application/pdf">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+      <span class="txt"><span class="t"><span data-fr>Mon CV en français</span><span data-en>My CV in French</span></span><span class="s"><span data-fr>PDF · une page</span><span data-en>PDF · one page</span></span></span>
+      <svg class="va" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn cv-en" href="Alexandre_Marchisio_CV_EN.pdf" target="_blank" rel="noopener" type="application/pdf">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+      <span class="txt"><span class="t"><span data-fr>Mon CV en anglais</span><span data-en>My CV in English</span></span><span class="s"><span data-fr>PDF · une page</span><span data-en>PDF · one page</span></span></span>
+      <svg class="va" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn linkedin" href="https://www.linkedin.com/in/alexandremarchisio/" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="2.5 2.5 19 19" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></span>
+      <span class="txt"><span class="t">LinkedIn</span><span class="s"><span data-fr>Mon profil</span><span data-en>My profile</span></span></span>
+      <svg class="va" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn whatsapp" href="https://wa.me/33609042897" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></span>
+      <span class="txt"><span class="t">WhatsApp</span><span class="s">+33 6 09 04 28 97</span></span>
+      <svg class="va" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+
+  <a class="mail" href="mailto:alexandre.marchisio@gmail.com">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+    alexandre.marchisio@gmail.com
+  </a>
+
+  <footer>© 2026 Alexandre Marchisio</footer>
+</main>
+<script>
+  // la bascule FR / EN : l'adresse garde la langue (#en) pour pouvoir la partager
+  document.querySelectorAll(".bascule button").forEach(function (b) {
+    b.addEventListener("click", function () { choisir(b.dataset.choix, true); });
+  });
+  function choisir(l, garder) {
+    var html = document.documentElement;
+    html.dataset.lang = l;
+    html.lang = l;
+    document.querySelectorAll(".bascule button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.choix === l)); });
+    if (garder) history.replaceState(null, "", l === "en" ? "#en" : location.pathname);
+  }
+  choisir(document.documentElement.dataset.lang, false);
+</script>
+</body>
+</html>
